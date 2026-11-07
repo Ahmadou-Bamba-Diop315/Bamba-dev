@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Demande de site web</title>
+  <meta name="description" content="Présentez votre activité et vos besoins en quelques minutes. Réponse sous 48 heures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- PAGE:START -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 7.5 12 4l8 3.5v9L12 20l-8-3.5z"/><path d="M4 7.5 12 11l8-3.5M12 11v9"/></svg>
+        </span>
+        <span class="brand-name" data-agency-name>Votre agence web</span>
+      </a>
+      <span class="topbar-note">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+        Réponse sous 48 heures
+      </span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>Créons le site web qui fera grandir votre activité.</h1>
+          <p class="lead">Présentez-nous votre activité et vos besoins en quelques minutes. Nous étudierons votre projet et vous répondrons sous 48 heures.</p>
+
+          <ul class="facts">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+              <span><strong>2 minutes</strong> pour remplir le formulaire</span>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h5v-5h5V8h6"/></svg>
+              <span><strong>3 étapes</strong> simples</span>
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3.5 6.6L4 20l1.3-3.6A8 8 0 0 1 4 12z"/></svg>
+              <span><strong>Réponse</strong> sous 48 heures</span>
+            </li>
+          </ul>
+
+          <a class="btn btn-primary btn-lg" href="#projet">Présenter mon projet</a>
+        </div>
+
+        <aside class="preview" aria-label="Exemple de demande reçue">
+          <p class="preview-caption">Ce que nous recevons à la fin du formulaire</p>
+          <div class="chat">
+            <div class="bubble">
+              <p>Bonjour, je souhaite créer un site internet.</p>
+              <p><b>Mon activité</b><br>Awa, restaurant Chez Awa<br>Restaurant, Dakar</p>
+              <p><b>Mon site</b><br>Recevoir des réservations sur WhatsApp<br>Montrer mon menu, mes prix et mes photos<br>Délai : dans le mois</p>
+              <p><b>Aujourd'hui</b><br>Page Facebook, WhatsApp Business</p>
+              <span class="bubble-time">14:32</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="form-section" id="projet" aria-labelledby="form-title">
+      <div class="wrap">
+        <h2 class="visually-hidden" id="form-title">Formulaire de demande</h2>
+
+        <div class="card" id="form-card">
+          <div class="progress" role="progressbar" aria-label="Progression du formulaire" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1">
+            <span class="progress-fill" id="progress-fill"></span>
+          </div>
+
+          <ol class="steps" id="steps">
+            <li><button type="button" class="step" data-step="1"><span class="step-dot"><span class="step-num">1</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span class="step-label">Votre activité</span></button></li>
+            <li><button type="button" class="step" data-step="2"><span class="step-dot"><span class="step-num">2</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span class="step-label">Votre site</span></button></li>
+            <li><button type="button" class="step" data-step="3"><span class="step-dot"><span class="step-num">3</span><svg class="step-check" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><span class="step-label">Aujourd'hui</span></button></li>
+          </ol>
+
+          <form id="request-form" novalidate>
+
+            <!-- ÉTAPE 1 -->
+            <fieldset class="panel" data-panel="1">
+              <legend class="visually-hidden">Étape 1 : votre activité</legend>
+              <div class="panel-head">
+                <p class="step-count">Étape 1 sur 3</p>
+                <h3 class="panel-title" tabindex="-1">Parlez-nous de votre activité</h3>
+                <p class="panel-sub">Commençons par faire connaissance avec votre entreprise.</p>
+              </div>
+
+              <div class="grid-2">
+                <div class="field" data-field-wrap="firstName">
+                  <label for="firstName">Prénom</label>
+                  <input id="firstName" name="firstName" type="text" autocomplete="given-name" data-field="firstName" placeholder="Votre prénom">
+                  <p class="error" data-error-for="firstName" hidden></p>
+                </div>
+
+                <div class="field" data-field-wrap="business">
+                  <label for="business">Nom de votre activité</label>
+                  <input id="business" name="business" type="text" autocomplete="organization" data-field="business" placeholder="Restaurant, boutique, entreprise…">
+                  <p class="error" data-error-for="business" hidden></p>
+                </div>
+
+                <div class="field" data-field-wrap="sector">
+                  <label for="sector">Votre secteur d'activité</label>
+                  <select id="sector" name="sector" data-field="sector">
+                    <option value="">Choisir un secteur</option>
+                  </select>
+                  <p class="error" data-error-for="sector" hidden></p>
+                </div>
+
+                <div class="field" data-field-wrap="city">
+                  <label for="city">Votre ville</label>
+                  <input id="city" name="city" type="text" autocomplete="address-level2" data-field="city" placeholder="Ville où vous exercez">
+                  <p class="error" data-error-for="city" hidden></p>
+                </div>
+
+                <div class="field field-wide" data-field-wrap="sectorOther" id="sectorOther-wrap" hidden>
+                  <label for="sectorOther">Précisez votre secteur</label>
+                  <input id="sectorOther" name="sectorOther" type="text" data-field="sectorOther" placeholder="Ex. pâtisserie, garage automobile, agence de voyage">
+                  <p class="error" data-error-for="sectorOther" hidden></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- ÉTAPE 2 -->
+            <fieldset class="panel" data-panel="2" hidden>
+              <legend class="visually-hidden">Étape 2 : votre site</legend>
+              <div class="panel-head">
+                <p class="step-count">Étape 2 sur 3</p>
+                <h3 class="panel-title" tabindex="-1">Que doit faire votre site ?</h3>
+                <p class="panel-sub">Sélectionnez tout ce qui correspond à vos besoins. Plusieurs choix sont possibles.</p>
+              </div>
+
+              <div class="choices" id="needs-choices" data-group="needs" role="group" aria-label="Vos besoins"></div>
+              <p class="error" data-error-for="needs" hidden></p>
+
+              <div class="field" data-field-wrap="needsOther" id="needsOther-wrap" hidden>
+                <label for="needsOther">Décrivez ce besoin</label>
+                <input id="needsOther" name="needsOther" type="text" data-field="needsOther" placeholder="Ex. un espace pour publier mes offres d'emploi">
+                <p class="error" data-error-for="needsOther" hidden></p>
+              </div>
+
+              <div class="field field-spaced" data-field-wrap="timeline">
+                <label for="timeline">Pour quand souhaitez-vous avoir votre site ?</label>
+                <select id="timeline" name="timeline" data-field="timeline">
+                  <option value="">Choisir un délai</option>
+                </select>
+                <p class="error" data-error-for="timeline" hidden></p>
+              </div>
+            </fieldset>
+
+            <!-- ÉTAPE 3 -->
+            <fieldset class="panel" data-panel="3" hidden>
+              <legend class="visually-hidden">Étape 3 : aujourd'hui</legend>
+              <div class="panel-head">
+                <p class="step-count">Étape 3 sur 3</p>
+                <h3 class="panel-title" tabindex="-1">Et aujourd'hui, où vous trouve-t-on ?</h3>
+                <p class="panel-sub">Nous aimerions savoir comment vos clients découvrent actuellement votre activité.</p>
+              </div>
+
+              <p class="group-label" id="presence-label">Votre présence en ligne actuelle</p>
+              <div class="choices" id="presence-choices" data-group="presence" role="group" aria-labelledby="presence-label"></div>
+              <p class="error" data-error-for="presence" hidden></p>
+
+              <div class="grid-2 conditional-row">
+                <div class="field" data-field-wrap="website" id="website-wrap" hidden>
+                  <label for="website">Adresse de votre site actuel <span class="optional">(facultatif)</span></label>
+                  <input id="website" name="website" type="url" inputmode="url" data-field="website" placeholder="www.monsite.com">
+                </div>
+                <div class="field" data-field-wrap="presenceOther" id="presenceOther-wrap" hidden>
+                  <label for="presenceOther">Précisez</label>
+                  <input id="presenceOther" name="presenceOther" type="text" data-field="presenceOther" placeholder="Ex. annuaire local, Snapchat">
+                  <p class="error" data-error-for="presenceOther" hidden></p>
+                </div>
+              </div>
+
+              <div class="field field-spaced">
+                <label for="notes">Une information supplémentaire ? <span class="optional">(facultatif)</span></label>
+                <textarea id="notes" name="notes" rows="5" data-field="notes" placeholder="Décrivez-nous vos besoins, vos idées ou toute autre information utile pour mieux comprendre votre projet..."></textarea>
+              </div>
+
+              <section class="recap" aria-labelledby="recap-title">
+                <h4 class="recap-title" id="recap-title">Vérifiez votre demande</h4>
+                <div id="recap-body"></div>
+              </section>
+            </fieldset>
+
+            <div class="actions">
+              <button type="button" class="btn btn-ghost" id="btn-prev">Précédent</button>
+              <button type="button" class="btn btn-primary" id="btn-next">Continuer</button>
+              <a class="btn btn-whatsapp" id="btn-send" href="https://wa.me/" target="_blank" rel="noopener" hidden>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 1 3.5 6.6L4 20l1.3-3.6A8 8 0 0 1 4 12z"/><path d="M9.2 9.3c.3 2.3 2.2 4.4 5.5 5.4"/></svg>
+                Envoyer ma demande sur WhatsApp
+              </a>
+            </div>
+
+            <div class="after-send" id="after-send" hidden>
+              <p class="send-status" id="send-status" role="status"></p>
+              <div class="send-tools">
+                <span class="send-hint">WhatsApp ne s'ouvre pas ?</span>
+                <button type="button" class="link-btn" id="btn-copy">Copier le message</button>
+                <span class="send-hint">puis collez-le dans une conversation.</span>
+              </div>
+              <textarea class="copy-fallback" id="copy-fallback" rows="8" readonly hidden></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> <span data-agency-name>Votre agence web</span></span>
+      <span>Vos réponses servent uniquement à étudier votre projet.</span>
+    </div>
+  </footer>
+<!-- PAGE:END -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
