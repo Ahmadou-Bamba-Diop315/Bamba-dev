@@ -9,10 +9,10 @@ window.SITE_CONFIG = {
    * Exemple de format : "221XXXXXXXXX" pour un numéro sénégalais, "33XXXXXXXXX" pour un numéro français.
    * Tant qu'il est vide, WhatsApp s'ouvre et laisse choisir le destinataire.
    */
-  whatsappNumber: "",
+  whatsappNumber: "221761625324",
 
   /* Nom affiché dans l'en-tête et le pied de page. */
-  agencyName: "Votre agence web",
+  agencyName: "Bamba-dev",
 
   /* Clé d'enregistrement du brouillon dans le navigateur. Mettre "" pour désactiver. */
   draftStorageKey: "demande-site-brouillon-v1",
